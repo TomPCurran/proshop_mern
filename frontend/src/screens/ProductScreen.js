@@ -17,7 +17,6 @@ const ProductScreen = () => {
   const id = params.id;
 
   const [product, setProduct] = useState({});
-  console.log(`api/products/${id}`);
   useEffect(() => {
     const fetchProduct = async () => {
       const { data } = await axios.get(`/api/products/${id}`);
